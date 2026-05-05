@@ -5,7 +5,7 @@
 # Until then, this stub fails `brew install` deliberately so a botched
 # release can't silently install a 0.0.0 binary on testers.
 class MailtrapLocal < Formula
-  desc "Local email catcher: SMTP + Web UI + JSON API in one binary"
+  desc "Local email sandbox + catcher: SMTP + Web UI + JSON API in one binary"
   homepage "https://github.com/mailtrap/mailtrap-local"
   license "MIT"
 

@@ -1,6 +1,6 @@
 # homebrew-local
 
-Homebrew tap for [`mailtrap-local`](https://github.com/mailtrap/mailtrap-local), a single-binary local email catcher for individual developers.
+Homebrew tap for [`mailtrap-local`](https://github.com/mailtrap/mailtrap-local), a single-binary local email sandbox + catcher for individual developers.
 
 ## Install
 
