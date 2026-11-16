@@ -5,13 +5,13 @@
 class MailtrapLocal < Formula
   desc "Local email sandbox + catcher: SMTP + Web UI + JSON API in one binary"
   homepage "https://github.com/mailtrap/mailtrap-local"
-  version "0.5.0"
+  version "0.5.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/mailtrap/mailtrap-local/releases/download/v0.5.0/mailtrap-local_0.5.0_darwin_amd64.tar.gz"
-      sha256 "4f825f986313865c59c1ea832074eda59feaad922c12828d083fc95f0f18a5af"
+      url "https://github.com/mailtrap/mailtrap-local/releases/download/v0.5.1/mailtrap-local_0.5.1_darwin_amd64.tar.gz"
+      sha256 "e03f26d4b1cee03dc7e2d0a232d22d8923a3cfe1572bc2d3b7a7e49ddc81b2bd"
 
       define_method(:install) do
         bin.install "mailtrap-local"
@@ -21,8 +21,8 @@ class MailtrapLocal < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/mailtrap/mailtrap-local/releases/download/v0.5.0/mailtrap-local_0.5.0_darwin_arm64.tar.gz"
-      sha256 "8d797dd07af5b0cd490ea8072721d0feb179d1e04d6b5b4d89f9b1e595de4b27"
+      url "https://github.com/mailtrap/mailtrap-local/releases/download/v0.5.1/mailtrap-local_0.5.1_darwin_arm64.tar.gz"
+      sha256 "fed0c6060b272337d24958c50de634350cf938b2ed9a9e691301b59f2380f490"
 
       define_method(:install) do
         bin.install "mailtrap-local"
@@ -35,8 +35,8 @@ class MailtrapLocal < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mailtrap/mailtrap-local/releases/download/v0.5.0/mailtrap-local_0.5.0_linux_amd64.tar.gz"
-      sha256 "1ede95ca7cae76dcf5356c4ce506586f03775ff3ca7b90964952b74710e253a2"
+      url "https://github.com/mailtrap/mailtrap-local/releases/download/v0.5.1/mailtrap-local_0.5.1_linux_amd64.tar.gz"
+      sha256 "b01e5d915b6e4a53a469dbba3f1fd53b88b56c002c20efe011686b16e86fff9d"
       define_method(:install) do
         bin.install "mailtrap-local"
         # Sendmail-replacement symlink — same binary, dispatched on argv[0]
@@ -45,8 +45,8 @@ class MailtrapLocal < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mailtrap/mailtrap-local/releases/download/v0.5.0/mailtrap-local_0.5.0_linux_arm64.tar.gz"
-      sha256 "c0dc11efe22ae443dbac899a6e09a33472bc729eedf18257867c468289751dbb"
+      url "https://github.com/mailtrap/mailtrap-local/releases/download/v0.5.1/mailtrap-local_0.5.1_linux_arm64.tar.gz"
+      sha256 "9e089ff04d089b359e4ea6d116665d67a6b469a46beefeddcb190a5bc48ad2a2"
       define_method(:install) do
         bin.install "mailtrap-local"
         # Sendmail-replacement symlink — same binary, dispatched on argv[0]
